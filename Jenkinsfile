@@ -25,7 +25,7 @@ pipeline {
         stage('Git Checkout')
          {
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/devopsenggr/fullstack-blogapp.git'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/bunny150604/BGD.git'
             }
         }
         stage('Compile') {
