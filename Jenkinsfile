@@ -33,9 +33,7 @@ pipeline {
             sh  "mvn compile"
             }
         }
-        
-        
-        stage('Package') {
+       stage('Package') {
             steps {
                 sh "mvn package"
             }
