@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>bankapp</artifactId>
+	<artifactId>blogapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bankapp</name>
-	<description>Banking Web Application</description>
+	<name>blogapp</name>
+	<description>Blogging Application</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -80,7 +80,7 @@
 	
 	</build>
 
-		<distributionManagement>
+     <distributionManagement>
         <repository>
             <id>maven-releases</id>
             <url>http://44.203.208.188:8081/repository/maven-releases/</url>
