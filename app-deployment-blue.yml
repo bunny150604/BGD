@@ -1,31 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bankapp-blue
+  name: blogapp-blue
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bankapp
+      app: blogapp
       version: blue
   template:
     metadata:
       labels:
-        app: bankapp
+        app: blogapp
         version: blue
     spec:
       containers:
-      - name: bankapp
-        image: adijaiswal/bankapp:blue # Adjust the image tag for the blue version
+      - name: blogapp
+        image: awsd43/blogapp:blue # Adjust the image tag for the blue version
         ports:
         - containerPort: 8080
-        env:
-        - name: SPRING_DATASOURCE_URL
-          value: jdbc:mysql://mysql-service:3306/bankappdb?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
-        - name: SPRING_DATASOURCE_USERNAME
-          value: root
-        - name: SPRING_DATASOURCE_PASSWORD
-          value: Test@123
         resources:
           requests:
             memory: "500Mi"
